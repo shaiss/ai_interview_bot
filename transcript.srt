@@ -1,0 +1,24 @@
+1
+2023-05-04 21:50:59,186819 --> 2023-05-04 21:51:08,875057
+Guest: web3
+
+2
+2023-05-04 21:51:08,875066 --> 2023-05-04 21:51:18,563304
+Host: Thank you for joining us today on the podcast. Our topic today is all about web3. For our listeners who may not be familiar with this term, could you explain what exactly web3 is and how it differs from the traditional web we currently use?
+
+3
+2023-05-04 21:51:18,563304 --> 2023-05-04 21:51:43,733348
+Guest: it creates an internet of ownership through decentralkization
+
+4
+2023-05-04 21:51:43,733357 --> 2023-05-04 21:52:08,903401
+Host: So, how do you envision the development of decentralized technologies creating an internet of ownership and empowering individuals in today's digital landscape?
+
+5
+2023-05-04 21:52:08,903401 --> 2023-05-04 21:52:20,691464
+Guest: they will enable users to have a new society
+
+6
+2023-05-04 21:52:20,691473 --> 2023-05-04 21:52:32,479536
+Host: How do you envision your technology or innovation contributing to the creation of a new society that enables users to live more sustainably and equitably?
+

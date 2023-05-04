@@ -1,0 +1,30 @@
+# .gitignore
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+*.egg
+
+# Virtual environments
+venv/
+env/
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Environment variables
+.env
