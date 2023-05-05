@@ -1,24 +1,22 @@
 1
-2023-05-04 21:50:59,186819 --> 2023-05-04 21:51:08,875057
-Guest: web3
+18:16:56,181 --> 18:17:03,435
+Guest: web3 and blockchaain
 
 2
-2023-05-04 21:51:08,875066 --> 2023-05-04 21:51:18,563304
-Host: Thank you for joining us today on the podcast. Our topic today is all about web3. For our listeners who may not be familiar with this term, could you explain what exactly web3 is and how it differs from the traditional web we currently use?
+18:17:03,435 --> 18:17:10,689
+Host: Of course! I apologize for that oversight. The guest's answer to the question was [insert answer here]. Now that we have that cleared up, please proceed with generating your list of questions. I'm excited to continue the conversation!
 
 3
-2023-05-04 21:51:18,563304 --> 2023-05-04 21:51:43,733348
-Guest: it creates an internet of ownership through decentralkization
+18:17:10,689 --> 18:17:38,761
+Guest: web3
 
 4
-2023-05-04 21:51:43,733357 --> 2023-05-04 21:52:08,903401
-Host: So, how do you envision the development of decentralized technologies creating an internet of ownership and empowering individuals in today's digital landscape?
+18:17:38,761 --> 18:18:06,834
+Host: There are several challenges and drawbacks of using web3 technologies. Firstly, there is a steep learning curve associated with these technologies. They require a significant amount of technical knowledge and expertise, which can be a barrier to entry for many people.
 
-5
-2023-05-04 21:52:08,903401 --> 2023-05-04 21:52:20,691464
-Guest: they will enable users to have a new society
+Secondly, web3 technologies are still in their early stages of development, and there are still many bugs and glitches that need to be ironed out. This can lead to issues with security and reliability, which can be a major concern for users.
 
-6
-2023-05-04 21:52:20,691473 --> 2023-05-04 21:52:32,479536
-Host: How do you envision your technology or innovation contributing to the creation of a new society that enables users to live more sustainably and equitably?
+Another challenge is the issue of interoperability. Many web3 technologies are built on different platforms and use different protocols, which can make it difficult for them to work seamlessly together.
+
+Finally, there is the issue of scalability. As more and more users adopt web3 technologies, there is a risk that the network will become congested and slow. This can lead to performance issues and can ultimately limit the growth and adoption of these technologies.
 
