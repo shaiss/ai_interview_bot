@@ -1,14 +1,15 @@
+import json
 import random
 import datetime
 from host import Host
-from qa_provider import QAProvider
+from mediator import Mediator
 from srt_logger import SRTLogger
+from config import ENABLED_AGENTS, AGENT_FOLDER
 
 engine = "gpt-3.5-turbo"
 logger = SRTLogger()
 host = Host(engine=engine)
-qa_provider = QAProvider(engine=engine)
-internal_conversation = True
+mediator = Mediator(engine=engine, enabled_agents=ENABLED_AGENTS, agent_folder=AGENT_FOLDER)
 
 def run_conversation():
     start_time = datetime.datetime.now()
@@ -19,18 +20,16 @@ def run_conversation():
         if guest_input.lower() == "stop":
             break
 
-        questions = qa_provider.generate_questions(guest_input)
-        if internal_conversation:
-            print(f"Q&A Provider: Generated questions: {questions}")
+        processed_input = mediator.process_input(guest_input)
         
-        question = random.choice(questions)
+        question = random.choice(processed_input['questions'])
         
         end_time = datetime.datetime.now()
         duration = end_time - start_time
         logger.log_entry("Guest", guest_input, start_time, end_time)
         
         start_time = datetime.datetime.now()
-        host_response = host.respond(guest_input)
+        host_response = host.respond(question)
         end_time = start_time + duration
         logger.log_entry("Host", host_response, start_time, end_time)
         

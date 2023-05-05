@@ -11,17 +11,17 @@ class Host:
         self.engine = engine
 
     def respond(self, question):
-        prompt = f"As a podcast host, ask the following question to the guest as it is adding your podcast style: {question}"
+        prompt = f"As a podcast host, respond to the following question: {question}"
         response = openai.ChatCompletion.create(
             model=self.engine,
             messages=[
                 {"role": "system", "content": "You are a podcast host."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=500,
+            max_tokens=50,
             n=1,
             temperature=0.8,
         )
 
-        answer = response.choices[0].message['content'].strip()
+        answer = response.choices[0].text.strip()
         return answer
