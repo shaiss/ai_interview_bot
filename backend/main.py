@@ -1,10 +1,10 @@
 import json
 import random
 import datetime
-from host import Host
-from mediator import Mediator
-from srt_logger import SRTLogger
-from config import ENABLED_AGENTS, AGENT_FOLDER
+from backend.host import Host
+from backend.mediator import Mediator
+from backend.srt_logger import SRTLogger
+from backend.config import ENABLED_AGENTS, AGENT_FOLDER
 
 engine = "gpt-3.5-turbo"
 logger = SRTLogger()
@@ -22,14 +22,14 @@ def run_conversation():
 
         processed_input = mediator.process_input(guest_input)
         
-        question = random.choice(processed_input['questions'])
-        
+        question = random.choice(processed_input)
+
         end_time = datetime.datetime.now()
         duration = end_time - start_time
         logger.log_entry("Guest", guest_input, start_time, end_time)
         
         start_time = datetime.datetime.now()
-        host_response = host.respond(question)
+        host_response = host.respond(question, guest_input)
         end_time = start_time + duration
         logger.log_entry("Host", host_response, start_time, end_time)
         
